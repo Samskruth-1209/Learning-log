@@ -1,0 +1,16 @@
+On 12-11-2026:
+I got to know about two new tools they are: 1.ffmpeg & 2.qrencode
+1.ffmpeg:
+    It used to extract the frames from the videos at particular time.
+    The command to extract the frames is:
+    ->ffmpeg -i <inputfile> -frames:v <outputfile>
+    To find the frame at particular time is:
+    ->ffmpeg -i <inputfile> -t "HH:MM:SS" <outputfile>
+    To make the extracted frame into gif the command is:
+    ->ffmpeg -i <inputfile> -t "HH:MM:SS" <outputfile.gif>
+    And the flag -vf is used to filters for fps and scale.
+
+2.qrencode:
+    It geneartes the QR code
+    The command:
+    ->qrencode -o <filename(output)> "URL"
